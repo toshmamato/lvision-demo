@@ -1,8 +1,78 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>L Vision by Inoshkins — Demo</title>
-<script>try{document.documentElement.dataset.theme=localStorage.getItem('lv-theme')||(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark')}catch(e){document.documentElement.dataset.theme='dark'}</script>
-<link rel="stylesheet" href="css/style.css"></head><body>
-<div id="in"><div><h1>L VISION</h1><p>BY INOSHKINS</p><u></u></div></div>
-<div id="sp"></div><div class="top"><div class="mq"><div class="mi"><span>DEFINED BY VISION</span><span>Новая коллекция FW 2026</span><span>Демо-скидка до −40%</span><span>Промокод LVISION10</span><span>До конца акции: <b class="cd">47:59:59</b></span></div><div class="mi"><span>DEFINED BY VISION</span><span>Новая коллекция FW 2026</span><span>Демо-скидка до −40%</span><span>Промокод LVISION10</span><span>До конца акции: <b class="cd">47:59:59</b></span></div></div></div>
-<header id="hd"><div class="w hb"><a href="#/" class="logo">L <b>VISION</b></a><nav class="d"><a href="#/">Главная</a><a href="#/catalog">Каталог</a><a href="#/fav">Избранное</a><a href="#/profile">Профиль</a></nav><div class="ic" id="ic"></div></div></header>
-<main id="app"></main><div id="ov"></div><aside id="dr"></aside><div id="md"></div><div id="ts"></div><nav class="bn" id="bn"></nav>
-<script src="js/app.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>L Vision by Inoshkins — Premium Collection</title>
+  <script>
+    try {
+      document.documentElement.dataset.theme = localStorage.getItem('lv-theme') || 
+        (matchMedia('(prefers-color-scheme:light)').matches ? 'light' : 'dark');
+    } catch(e) {
+      document.documentElement.dataset.theme = 'dark';
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Экран загрузки / Intro -->
+  <div id="in">
+    <div>
+      <h1>L VISION</h1>
+      <p>BY INOSHKINS</p>
+      <u></u>
+    </div>
+  </div>
+
+  <div id="sp"></div>
+
+  <!-- Бегущая строка -->
+  <div class="top">
+    <div class="mq">
+      <div class="mi">
+        <span>MARRY ME</span>
+        <span>L VISION BY INOSHKINS</span>
+        <span>LV FLOWERS</span>
+        <span>Новая коллекция 2026</span>
+        <span>Промокод LVISION10</span>
+        <span>До конца акции: <b class="cd">47:59:59</b></span>
+      </div>
+      <div class="mi">
+        <span>MARRY ME</span>
+        <span>L VISION BY INOSHKINS</span>
+        <span>LV FLOWERS</span>
+        <span>Новая коллекция 2026</span>
+        <span>Промокод LVISION10</span>
+        <span>До конца акции: <b class="cd">47:59:59</b></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Шапка сайта -->
+  <header id="hd">
+    <div class="w hb">
+      <a href="#/" class="logo">L <b>VISION</b></a>
+      <nav class="d">
+        <a href="#/">Главная</a>
+        <a href="#/catalog">Каталог</a>
+        <a href="#/fav">Избранное</a>
+        <a href="#/profile">Профиль</a>
+      </nav>
+      <div class="ic" id="ic"></div>
+    </div>
+  </header>
+
+  <!-- Основной контейнер для JS -->
+  <main id="app"></main>
+
+  <!-- Вспомогательные элементы (Оверлей, Корзина/Дровер, Модалки, Уведомления, Нижняя навигация) -->
+  <div id="ov"></div>
+  <aside id="dr"></aside>
+  <div id="md"></div>
+  <div id="ts"></div>
+  <nav class="bn" id="bn"></nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
