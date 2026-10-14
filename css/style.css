@@ -129,3 +129,44 @@ table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:10px 8px;
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
+
+/* Banner animatsiyasi — telefon va kompyuter */
+.top {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-text-size-adjust: 100%;
+}
+
+.mq {
+  display: flex;
+  width: max-content;
+  max-width: none;
+  will-change: transform;
+  animation: mq 32s linear infinite;
+  -webkit-animation: mq 32s linear infinite;
+}
+
+.mi {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.mi span {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 799px) {
+  .mq {
+    animation-duration: 24s;
+    -webkit-animation-duration: 24s;
+  }
+
+  .mi span {
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 10px;
+  }
+}
